@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -26,4 +26,47 @@ body {
   width: 8rem;
   height: 3rem;
   font-size: 1rem;
+  font-weight: 600;
+}
+
+.intro-heading {
+  color: #13183f;
+  font-size: 2.5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  font-weight: 800;
+}
+
+.intro-paragraph {
+  color: #83869a;
+  font-size: 1rem;
+  margin: 1rem;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.intro-btn {
+  background-color: #f00249bd;
+  color: white;
+  border-radius: 50px;
+  width: 11rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  margin: 1rem;
+  font-weight: 600;
+}
+
+.intro-image {
+  width: 100%;
+}
+
+.intro-card {
+  margin: 1rem;
+  background-color: #f00249bd;
+  color: white;
+  height: 120px;
+  border-radius: 10px;
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
