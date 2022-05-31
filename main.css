@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -37,7 +37,8 @@ body {
   font-weight: 800;
 }
 
-.intro-paragraph {
+.intro-paragraph,
+.course-card__description {
   color: #83869a;
   font-size: 1rem;
   margin: 1rem;
@@ -69,4 +70,52 @@ body {
   padding: 1.5rem;
   font-weight: 600;
   font-size: 1.5rem;
+}
+
+.course-card {
+  margin: 1rem;
+  width: 80%;
+  margin: 1.8rem auto;
+  border-radius: 5px;
+}
+
+.course-card__heading {
+  color: #13183f;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.course-card__description {
+  margin: 0;
+}
+
+.course-card__link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1rem 0;
+  color: #f74780;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  background-color: #13183f;
+  height: 8rem;
+}
+
+.footer-button {
+  background-color: #f74780;
+  color: white;
+  border-radius: 50px;
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
