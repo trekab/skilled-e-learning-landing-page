@@ -155,4 +155,20 @@ body {
     background: url(./assets/image-hero-tablet.png) no-repeat top -150px left -50px;
     height: 53vh;
   }
+
+  .course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .intro-card {
+    height: 30vh;
+    padding: 3rem;
+  }
+
+  .intro-card,
+  .course-card {
+    width: 47%;
+  }
 }
