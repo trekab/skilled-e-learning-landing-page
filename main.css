@@ -173,3 +173,25 @@ body {
     width: 47%;
   }
 }
+
+@media (min-width: 992px) {
+  .intro {
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: space-between;
+  }
+  .intro-heading {
+    font-size: 3rem;
+  }
+  .intro {
+    height: 80vh;
+  }
+  .intro-image {
+    background: url(./assets/image-hero-desktop.png) no-repeat center top -380px;
+  }
+
+  .intro-card,
+  .course-card {
+    width: 30%;
+  }
+}
