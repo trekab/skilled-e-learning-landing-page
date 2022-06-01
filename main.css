@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(#ffffff 50%, #f2f2f2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #13183f;
+  margin: 1rem;
+}
+
+.header-button {
+  background-color: #13183f;
+  color: white;
+  border-radius: 50px;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.header-button:hover {
+  background-color: #666ca3;
+}
+
+.intro-heading {
+  color: #13183f;
+  font-size: 2.5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  font-weight: 800;
+}
+
+.intro-paragraph,
+.course-card__description {
+  color: #83869a;
+  font-size: 1rem;
+  margin: 1rem;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.intro-btn {
+  background: linear-gradient(#ff6f48, #f02aa6);
+  color: white;
+  border-radius: 50px;
+  width: 11rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  margin: 1rem;
+  font-weight: 600;
+}
+
+.intro-btn:hover {
+  background: linear-gradient(#ff6f48, #ffa7c3);
+}
+
+.intro-image {
+  background: url(./assets/image-hero-mobile.png) no-repeat center;
+  height: 50vh;
+  width: 100%;
+  margin: auto;
+}
+
+.intro-card {
+  margin: 1rem;
+  background: linear-gradient(#ff6f48, #f02aa6);
+  color: white;
+  height: 120px;
+  border-radius: 10px;
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.course-card {
+  padding: 1rem;
+  padding-bottom: 0;
+  width: 80%;
+  margin: 4rem auto;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.course-card__heading {
+  color: #13183f;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.course-card__logo {
+  position: relative;
+  top: -45px;
+}
+
+.course-card__description {
+  margin: 0;
+}
+
+.course-card__link {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  color: #f74780;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #13183f;
+  height: 8rem;
+}
+
+.footer-button {
+  background: linear-gradient(#4851ff, #f02aa6);
+  color: #ffffff;
+  border-radius: 50px;
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-button:hover {
+  background: linear-gradient(#4851ff, #ffa7c3);
+}
