@@ -88,7 +88,7 @@ body {
   padding: 1rem;
   padding-bottom: 0;
   width: 80%;
-  margin: 4rem auto;
+  margin: 2.5rem auto;
   border-radius: 10px;
   background-color: white;
 }
@@ -141,4 +141,35 @@ body {
 
 .footer-button:hover {
   background: linear-gradient(#4851ff, #ffa7c3);
+}
+
+@media (min-width: 768px) {
+  .intro {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .intro-image {
+    background: url(./assets/image-hero-tablet.png) no-repeat top -150px left -50px;
+    height: 53vh;
+  }
+
+  .course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .intro-card {
+    height: 30vh;
+    padding: 3rem;
+  }
+
+  .intro-card,
+  .course-card {
+    width: 47%;
+  }
 }
