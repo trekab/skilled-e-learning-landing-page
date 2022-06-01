@@ -88,7 +88,7 @@ body {
   padding: 1rem;
   padding-bottom: 0;
   width: 80%;
-  margin: 4rem auto;
+  margin: 2.5rem auto;
   border-radius: 10px;
   background-color: white;
 }
@@ -160,6 +160,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 4rem;
   }
 
   .intro-card {
