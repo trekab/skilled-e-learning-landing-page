@@ -9,7 +9,7 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  background: linear-gradient(white 50%, #cccaca);;
+  background: linear-gradient(#ffffff 50%, #f2f2f2);
 }
 
 .header {
@@ -24,10 +24,14 @@ body {
   background-color: #13183f;
   color: white;
   border-radius: 50px;
-  width: 8rem;
+  width: 9rem;
   height: 3rem;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.header-button:hover {
+  background-color: #666ca3;
 }
 
 .intro-heading {
@@ -48,7 +52,7 @@ body {
 }
 
 .intro-btn {
-  background: linear-gradient(rgba(255, 136, 0, 0.651), #f00249bd 50%);
+  background: linear-gradient(#ff6f48, #f02aa6);
   color: white;
   border-radius: 50px;
   width: 11rem;
@@ -56,6 +60,10 @@ body {
   font-size: 1rem;
   margin: 1rem;
   font-weight: 600;
+}
+
+.intro-btn:hover {
+  background: linear-gradient(#ff6f48, #ffa7c3);
 }
 
 .intro-image {
@@ -67,7 +75,7 @@ body {
 
 .intro-card {
   margin: 1rem;
-  background: linear-gradient(rgba(255, 136, 0, 0.651), #f00249bd 50%);
+  background: linear-gradient(#ff6f48, #f02aa6);
   color: white;
   height: 120px;
   border-radius: 10px;
@@ -116,17 +124,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  color: white;
+  color: #ffffff;
   background-color: #13183f;
   height: 8rem;
 }
 
 .footer-button {
-  background: linear-gradient(#3746b9 5%, #f74780);
-  color: white;
+  background: linear-gradient(#4851ff, #f02aa6);
+  color: #ffffff;
   border-radius: 50px;
   width: 8rem;
   height: 3rem;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.footer-button:hover {
+  background: linear-gradient(#4851ff, #ffa7c3);
 }
