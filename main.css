@@ -47,7 +47,7 @@ body {
 }
 
 .intro-btn {
-  background-color: #f00249bd;
+  background: linear-gradient(rgba(255, 136, 0, 0.651), #f00249bd 50%);
   color: white;
   border-radius: 50px;
   width: 11rem;
@@ -58,12 +58,15 @@ body {
 }
 
 .intro-image {
+  background: url(./assets/image-hero-mobile.png) no-repeat center;
+  height: 50vh;
   width: 100%;
+  margin: auto;
 }
 
 .intro-card {
   margin: 1rem;
-  background-color: #f00249bd;
+  background: linear-gradient(rgba(255, 136, 0, 0.651), #f00249bd 50%);
   color: white;
   height: 120px;
   border-radius: 10px;
@@ -111,7 +114,7 @@ body {
 }
 
 .footer-button {
-  background-color: #f74780;
+  background: linear-gradient(#3746b9 5%, #f74780);
   color: white;
   border-radius: 50px;
   width: 8rem;
