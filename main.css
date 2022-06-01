@@ -9,6 +9,7 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(white 50%, #cccaca);;
 }
 
 .header {
@@ -76,10 +77,12 @@ body {
 }
 
 .course-card {
-  margin: 1rem;
+  padding: 1rem;
+  padding-bottom: 0;
   width: 80%;
-  margin: 1.8rem auto;
-  border-radius: 5px;
+  margin: 4rem auto;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .course-card__heading {
@@ -90,6 +93,11 @@ body {
   margin-top: 1rem;
 }
 
+.course-card__logo {
+  position: relative;
+  top: -45px;
+}
+
 .course-card__description {
   margin: 0;
 }
@@ -97,7 +105,7 @@ body {
 .course-card__link {
   display: inline-block;
   text-decoration: none;
-  margin: 1rem 0;
+  margin-top: 1.5rem;
   color: #f74780;
   font-weight: 700;
   font-size: 1rem;
