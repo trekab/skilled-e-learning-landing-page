@@ -121,12 +121,18 @@ body {
 
 .footer {
   display: flex;
+  align-items: center;
+  background-color: #13183f;
+  height: 8rem;
+}
+
+.footer-wrapper {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   color: #ffffff;
-  background-color: #13183f;
-  height: 8rem;
+  width: 100%;
 }
 
 .footer-button {
@@ -193,5 +199,15 @@ body {
   .intro-card,
   .course-card {
     width: 30%;
+  }
+
+  .footer-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .main-wrapper {
+    width: 80%;
+    margin: auto;
   }
 }
