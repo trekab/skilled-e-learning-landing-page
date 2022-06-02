@@ -158,7 +158,10 @@ body {
   }
 
   .intro-image {
-    background: url(./assets/image-hero-tablet.png) no-repeat top -150px left -50px;
+    background-image: url(./assets/image-hero-desktop.png);
+    background-position: left bottom;
+    background-size: 750px auto;
+    min-width: 500px;
     height: 53vh;
   }
 
@@ -193,7 +196,12 @@ body {
     height: 80vh;
   }
   .intro-image {
-    background: url(./assets/image-hero-desktop.png) no-repeat center top -380px;
+    height: 60vh;
+    background-image: url(./assets/image-hero-desktop.png);
+    background-position: left bottom;
+    background-size: 900px auto;
+    min-width: 630px;
+    
   }
 
   .intro-card,
