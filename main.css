@@ -189,19 +189,21 @@ body {
     padding-top: 0;
     justify-content: space-between;
   }
+
   .intro-heading {
     font-size: 3rem;
   }
-  .intro {
-    height: 80vh;
-  }
+
   .intro-image {
-    height: 60vh;
+    height: 70vh;
     background-image: url(./assets/image-hero-desktop.png);
     background-position: left bottom;
     background-size: 900px auto;
     min-width: 630px;
-    
+  }
+
+  .intro-card {
+    font-size: 1.8rem;
   }
 
   .intro-card,
