@@ -121,12 +121,18 @@ body {
 
 .footer {
   display: flex;
+  align-items: center;
+  background-color: #13183f;
+  height: 8rem;
+}
+
+.footer-wrapper {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   color: #ffffff;
-  background-color: #13183f;
-  height: 8rem;
+  width: 100%;
 }
 
 .footer-button {
@@ -152,7 +158,10 @@ body {
   }
 
   .intro-image {
-    background: url(./assets/image-hero-tablet.png) no-repeat top -150px left -50px;
+    background-image: url(./assets/image-hero-desktop.png);
+    background-position: left bottom;
+    background-size: 750px auto;
+    min-width: 500px;
     height: 53vh;
   }
 
@@ -171,5 +180,44 @@ body {
   .intro-card,
   .course-card {
     width: 47%;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro {
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: space-between;
+  }
+
+  .intro-heading {
+    font-size: 3rem;
+  }
+
+  .intro-image {
+    height: 70vh;
+    background-image: url(./assets/image-hero-desktop.png);
+    background-position: left bottom;
+    background-size: 900px auto;
+    min-width: 630px;
+  }
+
+  .intro-card {
+    font-size: 1.8rem;
+  }
+
+  .intro-card,
+  .course-card {
+    width: 30%;
+  }
+
+  .footer-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .main-wrapper {
+    width: 80%;
+    margin: auto;
   }
 }
