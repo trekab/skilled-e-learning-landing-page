@@ -183,7 +183,8 @@ body {
   .intro-text {
     height: 50vh;
     width: 48%;
-    margin-top: 8rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
   .intro-image {
@@ -216,9 +217,10 @@ body {
 
 @media (min-width: 992px) {
   .hero-image {
-    height: 90vh;
+    height: 95vh;
     background-image: url(./assets/image-hero-desktop.png);
-    background-position: 75px -140px;
+    background-position: 18px -180px;
+    background-size: auto 120%;
   }
 
   .intro-heading {
@@ -240,7 +242,7 @@ body {
   }
 
   .main-wrapper {
-    width: 75%;
+    width: 80%;
     margin: auto;
   }
 }
