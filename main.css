@@ -154,12 +154,24 @@ body {
 }
 
 @media (min-width: 768px) {
+  .hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 70vh;
+    background-image: url(./assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  .header-button {
+    z-index: 1;
+  }
+
   .main-wrapper {
     width: 85%;
     margin: auto;
-  }
-  .intro {
-    
   }
 
   .intro-text {
@@ -169,14 +181,7 @@ body {
   }
 
   .intro-image {
-    background-image: url(./assets/image-hero-tablet.png);
-    background-position: left bottom;
-    height: 70vh;
-    position: absolute;
-    left: 47%;
-    top: 10px;
-    z-index: 999;
-    overflow: hidden;
+    display: none;
   }
 
   .course-cards {
@@ -198,21 +203,13 @@ body {
 }
 
 @media (min-width: 992px) {
-  .intro {
-   
+  .hero-image {
+    height: 80vh;
+    background-image: url(./assets/image-hero-desktop.png);
   }
 
   .intro-heading {
-    font-size: 3rem;
-  }
-
-  .intro-image {
-    background-image: url(./assets/image-hero-desktop.png);
-    background-size: contain;
-    position: absolute;
-    height: 90vh;
-    left: 55%;
-    top: -105px;
+    font-size: 3.5rem;
   }
 
   .intro-card {
