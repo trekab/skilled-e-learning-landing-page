@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -30,8 +30,9 @@ body {
   border-radius: 50px;
   width: 9.5rem;
   height: 3rem;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .header-button:hover {
@@ -40,18 +41,19 @@ body {
 
 .intro-heading {
   color: #13183f;
-  font-size: 2.5rem;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 800;
   margin: 1rem;
   margin-top: 2rem;
-  font-weight: 800;
 }
 
 .intro-paragraph,
 .course-card__description {
   color: #83869a;
-  font-size: 1rem;
+  font-size: 16px;
   margin: 1rem;
-  line-height: 26px;
+  line-height: 28px;
   font-weight: 500;
 }
 
@@ -61,9 +63,10 @@ body {
   border-radius: 50px;
   width: 10rem;
   height: 3.5rem;
-  font-size: 1rem;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
   margin: 1rem;
-  font-weight: 600;
 }
 
 .intro-btn:hover {
@@ -81,11 +84,11 @@ body {
   margin: 1rem;
   background: linear-gradient(#ff6f48, #f02aa6);
   color: white;
-  height: 120px;
   border-radius: 10px;
   padding: 1.5rem;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .course-card {
@@ -100,9 +103,10 @@ body {
 .course-card__heading {
   color: #13183f;
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 24px;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  line-height: 28px;
 }
 
 .course-card__logo {
@@ -145,8 +149,9 @@ body {
   border-radius: 50px;
   width: 8rem;
   height: 3rem;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .footer-button:hover {
@@ -173,19 +178,29 @@ body {
     width: 85%;
     margin: auto;
   }
-
+  .intro-heading{
+    font-size: 36px;
+  }
   .intro-text {
     height: 50vh;
     width: 48%;
-    margin-top: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .intro-image {
     display: none;
   }
 
+  .intro-paragraph,
+  .course-card__description {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
   .course-cards {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 4rem;
@@ -204,12 +219,19 @@ body {
 
 @media (min-width: 992px) {
   .hero-image {
-    height: 80vh;
+    height: 95vh;
     background-image: url(./assets/image-hero-desktop.png);
+    background-position: 18px -180px;
+    background-size: auto 120%;
   }
 
   .intro-heading {
-    font-size: 3.5rem;
+    font-size: 56px;
+    line-height: 70px;
+  }
+  .intro-text {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
   .intro-card {
@@ -227,7 +249,7 @@ body {
   }
 
   .main-wrapper {
-    width: 75%;
+    width: 80%;
     margin: auto;
   }
 }
