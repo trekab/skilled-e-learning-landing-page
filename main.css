@@ -207,16 +207,12 @@ body {
   }
 
   .intro-image {
-    height: 70vh;
     background-image: url(./assets/image-hero-desktop.png);
-    background-position: left bottom;
-    background-size: 900px auto;
-    width: 51%;
+    background-size: contain;
     position: absolute;
+    height: 90vh;
     left: 55%;
-    top: 11px;
-    z-index: 999;
-    overflow: hidden;
+    top: -105px;
   }
 
   .intro-card {
