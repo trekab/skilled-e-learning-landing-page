@@ -41,8 +41,8 @@ body {
 
 .intro-heading {
   color: #13183f;
-  font-size: 56px;
-  line-height: 70px;
+  font-size: 36px;
+  line-height: 50px;
   font-weight: 800;
   margin: 1rem;
   margin-top: 2rem;
@@ -84,7 +84,6 @@ body {
   margin: 1rem;
   background: linear-gradient(#ff6f48, #f02aa6);
   color: white;
-  height: 120px;
   border-radius: 10px;
   padding: 1.5rem;
   font-weight: 800;
@@ -179,12 +178,14 @@ body {
     width: 85%;
     margin: auto;
   }
-
+  .intro-heading{
+    font-size: 36px;
+  }
   .intro-text {
     height: 50vh;
     width: 48%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .intro-image {
@@ -193,12 +194,13 @@ body {
 
   .intro-paragraph,
   .course-card__description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
   }
 
   .course-cards {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 4rem;
@@ -224,7 +226,12 @@ body {
   }
 
   .intro-heading {
-    font-size: 3.5rem;
+    font-size: 56px;
+    line-height: 70px;
+  }
+  .intro-text {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
   .intro-card {
