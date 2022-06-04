@@ -12,6 +12,10 @@ body {
   background: linear-gradient(#ffffff 50%, #f2f2f2);
 }
 
+.main-wrapper {
+  min-height: calc(100vh - 8rem);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -24,7 +28,7 @@ body {
   background-color: #13183f;
   color: white;
   border-radius: 50px;
-  width: 9rem;
+  width: 9.5rem;
   height: 3rem;
   font-size: 1rem;
   font-weight: 600;
@@ -217,7 +221,7 @@ body {
   }
 
   .main-wrapper {
-    width: 80%;
+    width: 75%;
     margin: auto;
   }
 }
