@@ -59,7 +59,7 @@ body {
   background: linear-gradient(#ff6f48, #f02aa6);
   color: white;
   border-radius: 50px;
-  width: 11rem;
+  width: 10rem;
   height: 3.5rem;
   font-size: 1rem;
   margin: 1rem;
@@ -154,19 +154,29 @@ body {
 }
 
 @media (min-width: 768px) {
+  .main-wrapper {
+    width: 85%;
+    margin: auto;
+  }
   .intro {
-    margin-top: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    
+  }
+
+  .intro-text {
+    height: 50vh;
+    width: 48%;
+    margin-top: 8rem;
   }
 
   .intro-image {
-    background-image: url(./assets/image-hero-desktop.png);
+    background-image: url(./assets/image-hero-tablet.png);
     background-position: left bottom;
-    background-size: 750px auto;
-    min-width: 500px;
-    height: 53vh;
+    height: 70vh;
+    position: absolute;
+    left: 47%;
+    top: 10px;
+    z-index: 999;
+    overflow: hidden;
   }
 
   .course-cards {
@@ -189,9 +199,7 @@ body {
 
 @media (min-width: 992px) {
   .intro {
-    margin-top: 0;
-    padding-top: 0;
-    justify-content: space-between;
+   
   }
 
   .intro-heading {
@@ -203,7 +211,12 @@ body {
     background-image: url(./assets/image-hero-desktop.png);
     background-position: left bottom;
     background-size: 900px auto;
-    min-width: 630px;
+    width: 51%;
+    position: absolute;
+    left: 55%;
+    top: 11px;
+    z-index: 999;
+    overflow: hidden;
   }
 
   .intro-card {
