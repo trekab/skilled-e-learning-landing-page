@@ -41,4 +41,4 @@ Users should be able to:
 
 - Website - [Treasure Kabareebe](https://trekab.github.io/)
 - Frontend Mentor - [@trekab](https://www.frontendmentor.io/profile/trekab)
-- Twitter - [@TKabareebe](https://twitter.com/TKabareebe)
+- LinkedIn - [Treasure Kabareebe](https://www.linkedin.com/in/treasure-kabareebe/)
