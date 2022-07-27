@@ -12,6 +12,7 @@
 }
 
 * {
+  font-family: "Plus Jakarta Sans", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,23 +20,23 @@
 }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
 
-.main-wrapper {
+/* .main-wrapper {
   min-height: calc(100vh - 8rem);
-}
+} */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #13183f;
+  color: var(--blue);
   margin: 1rem;
 }
 
-.header .logo {
+.header .logo,
+.footer .logo {
   height: 28px;
 }
 
@@ -116,29 +117,35 @@ body {
   font-size: 24px;
   line-height: 32px;
   height: 120px;
+  margin-top: 40px;
 }
 
 .course-card {
   padding: 1rem;
   padding-bottom: 0;
-  width: 80%;
+  width: 90%;
   margin: 2.5rem auto;
   border-radius: 10px;
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .course-card__heading {
   color: var(--blue);
   font-weight: 800;
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: -25px;
   margin-bottom: 1rem;
-  margin-top: 1rem;
   line-height: 28px;
 }
 
 .course-card__logo {
   position: relative;
   top: -45px;
+  display: block;
+  width: 56px;
 }
 
 .course-card__description {
@@ -151,7 +158,12 @@ body {
   margin-top: 1.5rem;
   color: var(--main-orange);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.course-card__link:hover {
+  color: var(--main-pink);
 }
 
 .footer {
@@ -208,8 +220,14 @@ body {
   }
 
   .main-wrapper {
-    width: 85%;
+    width: 90%;
     margin: auto;
+    margin-bottom: 86px;
+  }
+
+  .intro-card {
+    margin: 40px 0 0 0;
+    padding: 56px 32px;
   }
   .intro-heading {
     font-size: 36px;
@@ -232,21 +250,20 @@ body {
   }
 
   .course-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 4rem;
-  }
-
-  .intro-card {
-    height: 30vh;
-    padding: 3rem;
+    width: 90%;
+    height: 930px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 30%);
+    gap: 32px 15px;
   }
 
   .intro-card,
   .course-card {
-    width: 47%;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
   }
 }
 
@@ -262,6 +279,15 @@ body {
     font-size: 56px;
     line-height: 70px;
   }
+
+  .course-cards {
+    width: 95%;
+    height: 700px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 44%);
+    gap: 56px 30px;
+    margin-bottom: 140px;
+  }
   .intro-text {
     margin-top: 10rem;
     margin-bottom: 10rem;
@@ -273,7 +299,7 @@ body {
 
   .intro-card,
   .course-card {
-    width: 30%;
+    width: 100%;
   }
 
   .footer-wrapper {
