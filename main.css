@@ -1,6 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+:root {
+  --blue-hover: #666ca3;
+  --blue: #13183f;
+  --text-gray: #83869a;
+  --main-orange: #f74780;
+  --main-pink: #ffa7c3;
+  --white: #ffffff;
+  --primary-gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
 
 * {
+  font-family: "Plus Jakarta Sans", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,112 +20,132 @@
 }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  background: linear-gradient(#ffffff 50%, #f2f2f2);
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
 
-.main-wrapper {
+/* .main-wrapper {
   min-height: calc(100vh - 8rem);
-}
+} */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #13183f;
+  color: var(--blue);
   margin: 1rem;
 }
 
+.header .logo,
+.footer .logo {
+  height: 28px;
+}
+
 .header-button {
-  background-color: #13183f;
-  color: white;
-  border-radius: 50px;
-  width: 9.5rem;
-  height: 3rem;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 28px;
+  width: 140px;
+  height: 48px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 700;
 }
 
 .header-button:hover {
-  background-color: #666ca3;
+  background-color: var(--blue-hover);
   cursor: pointer;
 }
 
 .intro-heading {
-  color: #13183f;
-  font-size: 36px;
+  color: var(--blue);
+  font-size: 40px;
   line-height: 50px;
   font-weight: 800;
   margin: 1rem;
   margin-top: 2rem;
+  margin-bottom: 26px;
 }
 
 .intro-paragraph,
 .course-card__description {
-  color: #83869a;
+  color: var(--text-gray);
   font-size: 16px;
   margin: 1rem;
-  line-height: 28px;
+  line-height: 26px;
   font-weight: 500;
 }
 
 .intro-btn {
-  background: linear-gradient(#ff6f48, #f02aa6);
+  background: var(--primary-gradient);
   color: white;
   border-radius: 50px;
-  width: 10rem;
-  height: 3.5rem;
+  width: 167px;
+  height: 56px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 700;
-  margin: 1rem;
+  margin: 24px 1rem;
 }
 
 .intro-btn:hover {
-  background: linear-gradient(#ff6f48, #ffa7c3);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    var(--primary-gradient);
   cursor: pointer;
 }
 
 .intro-image {
-  background: url(./assets/image-hero-mobile.png) no-repeat center;
-  height: 50vh;
+  background-image: url("./assets/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 435px 409px;
+  height: 386px;
   width: 100%;
   margin: auto;
 }
 
 .intro-card {
-  margin: 1rem;
-  background: linear-gradient(#ff6f48, #f02aa6);
-  color: white;
+  margin: 16px 1rem;
+  background: var(--primary-gradient);
+  color: var(--white);
   border-radius: 10px;
   padding: 1.5rem;
   font-weight: 800;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
+  height: 120px;
+  margin-top: 40px;
 }
 
 .course-card {
   padding: 1rem;
   padding-bottom: 0;
-  width: 80%;
+  width: 90%;
   margin: 2.5rem auto;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .course-card__heading {
-  color: #13183f;
+  color: var(--blue);
   font-weight: 800;
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: -25px;
   margin-bottom: 1rem;
-  margin-top: 1rem;
   line-height: 28px;
 }
 
 .course-card__logo {
   position: relative;
   top: -45px;
+  display: block;
+  width: 56px;
 }
 
 .course-card__description {
@@ -124,15 +156,20 @@ body {
   display: inline-block;
   text-decoration: none;
   margin-top: 1.5rem;
-  color: #f74780;
+  color: var(--main-orange);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.course-card__link:hover {
+  color: var(--main-pink);
 }
 
 .footer {
   display: flex;
   align-items: center;
-  background-color: #13183f;
+  background-color: var(--blue);
   height: 7rem;
 }
 
@@ -146,7 +183,7 @@ body {
 }
 
 .footer-button {
-  background: linear-gradient(#4851ff, #f02aa6);
+  background: var(--secondary-gradient);
   color: #ffffff;
   border-radius: 50px;
   width: 8rem;
@@ -157,11 +194,16 @@ body {
 }
 
 .footer-button:hover {
-  background: linear-gradient(#4851ff, #ffa7c3);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .hero-image {
     position: absolute;
     top: 0;
@@ -178,10 +220,16 @@ body {
   }
 
   .main-wrapper {
-    width: 85%;
+    width: 90%;
     margin: auto;
+    margin-bottom: 86px;
   }
-  .intro-heading{
+
+  .intro-card {
+    margin: 40px 0 0 0;
+    padding: 56px 32px;
+  }
+  .intro-heading {
     font-size: 36px;
   }
   .intro-text {
@@ -202,21 +250,20 @@ body {
   }
 
   .course-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 4rem;
-  }
-
-  .intro-card {
-    height: 30vh;
-    padding: 3rem;
+    width: 90%;
+    height: 930px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 30%);
+    gap: 32px 15px;
   }
 
   .intro-card,
   .course-card {
-    width: 47%;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
   }
 }
 
@@ -232,6 +279,15 @@ body {
     font-size: 56px;
     line-height: 70px;
   }
+
+  .course-cards {
+    width: 95%;
+    height: 700px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 44%);
+    gap: 56px 30px;
+    margin-bottom: 140px;
+  }
   .intro-text {
     margin-top: 10rem;
     margin-bottom: 10rem;
@@ -243,7 +299,7 @@ body {
 
   .intro-card,
   .course-card {
-    width: 30%;
+    width: 100%;
   }
 
   .footer-wrapper {
