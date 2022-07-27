@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+:root {
+  --blue-hover: #666ca3;
+  --blue: #13183f;
+  --text-gray: #83869a;
+  --main-orange: #f74780;
+  --main-pink: #ffa7c3;
+  --white: #ffffff;
+  --primary-gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
 
 * {
   box-sizing: border-box;
@@ -25,8 +36,8 @@ body {
 }
 
 .header-button {
-  background-color: #13183f;
-  color: white;
+  background-color: var(--blue);
+  color: var(--white);
   border-radius: 50px;
   width: 9.5rem;
   height: 3rem;
@@ -36,12 +47,12 @@ body {
 }
 
 .header-button:hover {
-  background-color: #666ca3;
+  background-color: var(--blue-hover);
   cursor: pointer;
 }
 
 .intro-heading {
-  color: #13183f;
+  color: var(--blue);
   font-size: 36px;
   line-height: 50px;
   font-weight: 800;
@@ -51,7 +62,7 @@ body {
 
 .intro-paragraph,
 .course-card__description {
-  color: #83869a;
+  color: var(--text-gray);
   font-size: 16px;
   margin: 1rem;
   line-height: 28px;
@@ -59,7 +70,7 @@ body {
 }
 
 .intro-btn {
-  background: linear-gradient(#ff6f48, #f02aa6);
+  background: var(--primary-gradient);
   color: white;
   border-radius: 50px;
   width: 10rem;
@@ -71,7 +82,12 @@ body {
 }
 
 .intro-btn:hover {
-  background: linear-gradient(#ff6f48, #ffa7c3);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    var(--primary-gradient);
   cursor: pointer;
 }
 
@@ -84,8 +100,8 @@ body {
 
 .intro-card {
   margin: 1rem;
-  background: linear-gradient(#ff6f48, #f02aa6);
-  color: white;
+  background: var(--primary-gradient);
+  color: var(--white);
   border-radius: 10px;
   padding: 1.5rem;
   font-weight: 800;
@@ -99,11 +115,11 @@ body {
   width: 80%;
   margin: 2.5rem auto;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .course-card__heading {
-  color: #13183f;
+  color: var(--blue);
   font-weight: 800;
   font-size: 24px;
   margin-bottom: 1rem;
@@ -124,7 +140,7 @@ body {
   display: inline-block;
   text-decoration: none;
   margin-top: 1.5rem;
-  color: #f74780;
+  color: var(--main-orange);
   font-weight: 700;
   font-size: 1rem;
 }
@@ -132,7 +148,7 @@ body {
 .footer {
   display: flex;
   align-items: center;
-  background-color: #13183f;
+  background-color: var(--blue);
   height: 7rem;
 }
 
@@ -146,7 +162,7 @@ body {
 }
 
 .footer-button {
-  background: linear-gradient(#4851ff, #f02aa6);
+  background: var(--secondary-gradient);
   color: #ffffff;
   border-radius: 50px;
   width: 8rem;
@@ -157,7 +173,12 @@ body {
 }
 
 .footer-button:hover {
-  background: linear-gradient(#4851ff, #ffa7c3);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
   cursor: pointer;
 }
 
@@ -181,7 +202,7 @@ body {
     width: 85%;
     margin: auto;
   }
-  .intro-heading{
+  .intro-heading {
     font-size: 36px;
   }
   .intro-text {
