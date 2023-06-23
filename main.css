@@ -23,10 +23,6 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
 
-/* .main-wrapper {
-  min-height: calc(100vh - 8rem);
-} */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -275,11 +271,12 @@ body {
 }
 
 @media (min-width: 992px) {
-  .hero-image {
-    height: 95vh;
+  .hero-image {    
+    height: 80vh;
     background-image: url(./assets/image-hero-desktop.png);
-    background-position: 18px -180px;
+    background-position: -18px -180px;
     background-size: auto 120%;
+    z-index: -99;
   }
 
   .intro-heading {
@@ -309,13 +306,9 @@ body {
     width: 100%;
   }
 
-  .footer-wrapper {
+  .footer-wrapper, .main-wrapper {
     width: 80%;
-    margin: auto;
-  }
-
-  .main-wrapper {
-    width: 80%;
+    max-width: 1140px;
     margin: auto;
   }
 }
