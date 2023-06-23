@@ -46,9 +46,11 @@ body {
   border-radius: 28px;
   width: 140px;
   height: 48px;
+  line-height: 48px; /* vertically center the text by making line height be the same as the height */
   font-size: 16px;
-  line-height: 28px;
   font-weight: 700;
+  text-decoration: none;
+  text-align: center;
 }
 
 .header-button:hover {
@@ -76,15 +78,18 @@ body {
 }
 
 .intro-btn {
+  display: inline-block;
   background: var(--primary-gradient);
   color: white;
   border-radius: 50px;
   width: 167px;
   height: 56px;
+  line-height: 56px;
   font-size: 16px;
-  line-height: 28px;
   font-weight: 700;
   margin: 24px 1rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 .intro-btn:hover {
@@ -153,13 +158,13 @@ body {
 }
 
 .course-card__link {
-  display: inline-block;
   text-decoration: none;
   margin-top: 1.5rem;
   color: var(--main-orange);
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 32px;
+  align-self: flex-start;
 }
 
 .course-card__link:hover {
@@ -188,9 +193,11 @@ body {
   border-radius: 50px;
   width: 8rem;
   height: 3rem;
+  line-height: 3rem; /* vertically center the text */
   font-size: 16px;
-  line-height: 28px;
   font-weight: 700;
+  text-decoration: none;
+  text-align: center;
 }
 
 .footer-button:hover {
