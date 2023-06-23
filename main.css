@@ -263,7 +263,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 30%);
-    gap: 32px 15px;
+    gap: 50px 15px;
   }
 
   .intro-card,
